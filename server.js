@@ -104,6 +104,14 @@ const server = createServer(app);
 // Serveur WebSocket
 const wss = new WebSocketServer({ server });
 
+setInterval(() => { // hearbeat
+    wss.clients.forEach(ws => {
+        if (ws.readyState === 1) {
+            ws.ping();
+        }
+    });
+}, 30000);
+
 const games = new Map();
 
 wss.on("connection", (ws) => {
