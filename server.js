@@ -27,7 +27,7 @@ app.get("/auth/twitch", (req, res) => {
 
     const params = new URLSearchParams({
         client_id: process.env.TWITCH_CLIENT_ID,
-        redirect_uri: "http://localhost:9090/auth/twitch/callback",
+        redirect_uri: "https://bastonx.com/auth/twitch/callback",
         response_type: "code",
         scope: "openid",
         state: state
@@ -58,7 +58,7 @@ app.get("/auth/twitch/callback", async (req, res) => {
                 client_secret: process.env.TWITCH_CLIENT_SECRET,
                 code: code,
                 grant_type: "authorization_code",
-                redirect_uri: "http://localhost:9090/auth/twitch/callback"
+                redirect_uri: "https://bastonx.com/auth/twitch/callback"
             })
         }
     );
