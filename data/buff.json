@@ -1,0 +1,14 @@
+[
+  {
+    "index": 0,
+    "id": "malus_fire",
+    "is_buff": false,
+    "name": "Brûlure",
+    "desc": "",
+    "price": 0,
+    "rarety": 0,
+    "signal": "cooldown_complete",
+    "stock": 10,
+    "stats": { "value": 1, "cooldown": 0.5, "cooldown_instant": true, "consommable": true }
+  }
+]

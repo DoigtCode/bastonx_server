@@ -1,0 +1,112 @@
+[
+  {
+    "index": 0,
+    "id": "damage_up",
+    "name": "Canon",
+    "desc": "[orange]Début du combat :[white] Dégâts des balles [green]+[value][white] définitivement.",
+    "price": 3,
+    "rarety": 0,
+    "signal": "fight_start",
+    "stats": { "value": 5, "cast_duration": 0.5, "consommable": true }
+  },
+  {
+    "index": 1,
+    "id": "heal_potion",
+    "name": "Potion de soin",
+    "desc": "Quand il vous reste [orange]<50% de vos HP[white], [green]+[value]HP[white].",
+    "price": 2,
+    "rarety": 0,
+    "signal": "fight_hit",
+    "stats": { "value": 50, "cast_duration": 0.5, "consommable": true }
+  },
+  {
+    "index": 2,
+    "id": "fire_bolt",
+    "name": "Trait de feu",
+    "desc": "Lance une boule de feu qui inflige [orange]-[value] [white]dégâts.",
+    "price": 5,
+    "rarety": 1,
+    "signal": "cooldown_complete",
+    "stats": { "value": 30, "factor": 0.9, "cast_duration": 1, "cooldown": 5, "mana_cost": 45, "buff": "malus_fire" }
+  },
+  {
+    "index": 3,
+    "id": "shotgun",
+    "name": "Fusil à pompe",
+    "desc": "Vos tirs ont [orange][value]% de chance[white] d'[green]envoyer 7 projectiles [white]dispersés.",
+    "price": 8,
+    "rarety": 2,
+    "signal": "fighter_shot",
+    "stats": { "value": 20, "factor": 0.85, "mana_cost": 25 }
+  },
+  {
+    "index": 4,
+    "id": "rune_warrior",
+    "name": "Rune du Guerrier",
+    "desc": "[orange]Début du combat :[white] Toutes les stats sont augmentées de [green]+[value]%[white].",
+    "price": 12,
+    "rarety": 3,
+    "signal": "fight_start",
+    "stats": { "value": 20, "factor": 0.9, "cast_duration": 0.99 }
+  },
+  {
+    "index": 5,
+    "id": "health_up",
+    "name": "Fromage",
+    "desc": "[orange]Début du combat :[white] Santé maximum [green]+[value][white] définitivement.",
+    "price": 3,
+    "rarety": 0,
+    "signal": "fight_start",
+    "stats": { "value": 10, "cast_duration": 0.5, "consommable": true }
+  },
+  {
+    "index": 6,
+    "id": "armor_up",
+    "name": "Casque",
+    "desc": "[orange]Début du combat :[white] Armure [green]+[value][white] définitivement.",
+    "price": 3,
+    "rarety": 0,
+    "signal": "fight_start",
+    "stats": { "value": 5, "cast_duration": 0.5, "consommable": true }
+  },
+  {
+    "index": 7,
+    "id": "range_up",
+    "name": "Antenne",
+    "desc": "[orange]Début du combat :[white] Distance de tir [green]+[value][white] définitivement.",
+    "price": 3,
+    "rarety": 0,
+    "signal": "fight_start",
+    "stats": { "value": 5, "cast_duration": 0.5, "consommable": true }
+  },
+  {
+    "index": 8,
+    "id": "prec_up",
+    "name": "Lunettes",
+    "desc": "[orange]Début du combat :[white] Précision de tir [green]+[value][white] définitivement.",
+    "price": 3,
+    "rarety": 0,
+    "signal": "fight_start",
+    "stats": { "value": 5, "cast_duration": 0.5, "consommable": true }
+  },
+  {
+    "index": 9,
+    "id": "crit_chance_up",
+    "name": "Dent",
+    "desc": "[orange]Début du combat :[white] Chances de critique [green]+[value][white] définitivement.",
+    "price": 3,
+    "rarety": 0,
+    "signal": "fight_start",
+    "stats": { "value": 2, "cast_duration": 0.5, "consommable": true }
+  },
+  {
+    "index": 10,
+    "id": "dodge_chance_up",
+    "name": "Masque",
+    "desc": "[orange]Début du combat :[white] Chances d'esquiver [green]+[value][white] définitivement.",
+    "price": 3,
+    "rarety": 0,
+    "signal": "fight_start",
+    "stats": { "value": 3, "cast_duration": 0.5, "consommable": true }
+  }
+]
