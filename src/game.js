@@ -29,7 +29,7 @@ export class Game {
         this.has_started = false;
         this.host_afk = false;
 
-        this.player_limit = 7;
+        this.player_limit = 24;
         this.player_health = 100;
 
         this.phase = GAME_PHASE.LOBBY;
