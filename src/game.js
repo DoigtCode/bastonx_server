@@ -120,7 +120,7 @@ export class Game {
             } 
         }
 
-        if (join_game == -1 || this.has_started)
+        if (join_game == -1 || join_game.has_started)
             return -1;
 
         join_game.players.push(player);
