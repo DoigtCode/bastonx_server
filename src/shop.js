@@ -10,7 +10,7 @@ export class Shop {
         this.rareties_final = [35, 45, 15, 5];
         this.nb_articles = 6;
         this.articles = [];
-        this.duration = 60000;
+        this.duration = 20000//60000;
     }
 
     refresh(game) {
@@ -23,7 +23,7 @@ export class Shop {
 
     unlock(game) {
         const players_sorted = [...game.active_players()].sort((a, b) => a.health - b.health);
-        const delays = [5000, 15000, 25000, 35000];
+        const delays = [5000, 6000, 7000, 8000];
         const count = players_sorted.length;
 
         const get_delay = (index) => {
